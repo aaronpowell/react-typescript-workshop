@@ -29,6 +29,7 @@ var bundler = browserify({
     debug: !isProd,
     cache: {},
     packageCache: {},
+    extensions: ['.js', '.tsx'],
     fullPaths: !isProd                       // for watchify
 });
 
@@ -36,6 +37,8 @@ gulp.task('bundle:js', ['clean:ts'], function () {
     bundler
         .bundle()
         .pipe(source(tsOut))
+        .pipe(sourcemaps.init({ loadMaps: true }))
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(dest));
 });
 
@@ -54,6 +57,8 @@ gulp.task('watch:js', ['clean:ts'], function () {
             .on('error', gutil.log)
             .pipe(source(tsOut))
             .pipe(buffer())
+            .pipe(sourcemaps.init({ loadMaps: true }))
+            .pipe(sourcemaps.write('.'))
             .pipe(gulp.dest(dest));
     }
 });
