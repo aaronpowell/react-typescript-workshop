@@ -1,0 +1,48 @@
+{
+  "name": "react-typescript-workshop",
+  "version": "1.0.0",
+  "description": "A demo app of React with TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronpowell/react-typescript-workshop.git"
+  },
+  "keywords": [
+    "react",
+    "typescript"
+  ],
+  "author": "Aaron Powell <me@aaron-powell.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aaronpowell/react-typescript-workshop/issues"
+  },
+  "homepage": "https://github.com/aaronpowell/react-typescript-workshop#readme",
+  "devDependencies": {
+    "babel-plugin-react-transform": "^1.1.1",
+    "babelify": "^7.2.0",
+    "browserify": "^12.0.1",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-nodemon": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.9.2",
+    "gulp-util": "^3.0.7",
+    "livereactload": "^2.1.0",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "react-proxy": "^1.1.1",
+    "tsd": "^0.6.5",
+    "tsify": "^0.12.2",
+    "typescript": "^1.6.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.6.0"
+  },
+  "private": true,
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
