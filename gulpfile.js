@@ -30,7 +30,8 @@ var bundler = browserify({
     cache: {},
     packageCache: {},
     extensions: ['.js', '.tsx'],
-    fullPaths: !isProd                       // for watchify
+    //fullPaths: !isProd                       // for watchify
+    fullPaths: false //working around bug #80 of lrload
 });
 
 gulp.task('bundle:js', ['clean:ts'], function () {
