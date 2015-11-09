@@ -2,9 +2,13 @@
 
 import * as React from 'react';
 
-class HelloWorld extends React.Component<{}, {}> {
+interface Props {
+    message: string
+};
+
+class HelloWorld extends React.Component<Props, {}> {
     render() {
-        return <h1>Hello World</h1>;
+        return <h1>{this.props.message}</h1>;
     }
 }
 
