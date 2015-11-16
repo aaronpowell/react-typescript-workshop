@@ -17,7 +17,7 @@ app.get('/dest/bootstrap.css', function (req, res) {
 
 app.get('/api/book/all', bookRoutes.getAll);
 app.get('/api/book/:id', bookRoutes.get);
-app.get('/', function (req, res) {
+app.get('/:id?', function (req, res) {
    res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
