@@ -1,0 +1,13 @@
+{
+    "books": [{
+        "title": "JavaScript: The Good Parts",
+        "authors": [
+            "Douglas Crockford"
+        ]
+    }, {
+        "title": "Practical Node.js: Building Real-World Scalable Web Apps",
+        "authors": [
+            "Azat Mardan"
+        ]
+    }]
+}
