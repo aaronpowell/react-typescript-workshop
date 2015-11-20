@@ -13,7 +13,7 @@ let { Route, HistoryLocation } = Router;
 const routes = (
   <Route handler={App}>
     <Route path="/" handler={BookListPage} />,
-    <Route path="/:id" handler={BookPage} />
+    <Route name="book-page" path="/:id" handler={BookPage} />
   </Route>
 );
 
