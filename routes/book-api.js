@@ -6,12 +6,13 @@ module.exports = {
     },
 
     get: function (req, res) {
-        var book = store.books.filter(function (b) { return b.id === req.params.id; })[0];
+        var book = store.books.filter(function (b) { return b.id === (req.params.id * 1); })[0];
 
         if (book) {
             res.json(book);
         } else {
             res.status(404);
+            res.end();
         }
     }
 };
