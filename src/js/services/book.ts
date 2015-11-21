@@ -7,5 +7,10 @@ export default {
         jQuery.ajax({
             url: '/api/book/all',
             method: 'GET'
+        }),
+    getById: (id: number) =>
+        jQuery.ajax({
+            url: `/api/book/${id}`,
+            method: 'GET'
         })
 };
