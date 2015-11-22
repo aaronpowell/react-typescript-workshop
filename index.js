@@ -1,6 +1,9 @@
 var path = require('path');
 var express = require('express');
+var bodyParser = require('body-parser');
 var app = express();
+
+app.use(bodyParser.json());
 
 var bookRoutes = require('./routes/book-api.js');
 
@@ -17,6 +20,10 @@ app.get('/dest/bootstrap.css', function (req, res) {
 
 app.get('/api/book/all', bookRoutes.getAll);
 app.get('/api/book/:id', bookRoutes.get);
+app.post('/api/book', bookRoutes.save);
+app.get('/book/add', function (req, res) {
+   res.sendFile(path.join(__dirname, 'views', 'index.html'));
+});
 app.get('/:id?', function (req, res) {
    res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
@@ -27,3 +34,4 @@ var server = app.listen(3000, function () {
 
   console.log('Example app listening at http://%s:%s', host, port);
 });
+

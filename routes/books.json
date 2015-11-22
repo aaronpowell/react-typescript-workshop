@@ -1,17 +1,20 @@
 {
-    "books": [{
-        "id": 1,
-        "title": "JavaScript: The Good Parts",
-        "authors": [
-            "Douglas Crockford"
-        ],
-        "link": "http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742"
-    }, {
-        "id": 2,
-        "title": "Practical Node.js: Building Real-World Scalable Web Apps",
-        "authors": [
-            "Azat Mardan"
-        ],
-        "link": "http://www.amazon.com/Practical-Node-js-Building-Real-World-Scalable/dp/1430265957"
-    }]
+    "books": [
+        {
+            "id": 1,
+            "title": "JavaScript: The Good Parts",
+            "authors": [
+                "Douglas Crockford"
+            ],
+            "link": "http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742"
+        },
+        {
+            "id": 2,
+            "title": "Practical Node.js: Building Real-World Scalable Web Apps",
+            "authors": [
+                "Azat Mardan"
+            ],
+            "link": "http://www.amazon.com/Practical-Node-js-Building-Real-World-Scalable/dp/1430265957"
+        }
+    ]
 }

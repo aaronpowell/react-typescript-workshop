@@ -7,12 +7,14 @@ import * as Router from 'react-router';
 import App from './App';
 import BookListPage from './BookListPage';
 import BookPage from './BookPage';
+import AddPage from './AddPage';
 
 let { Route, HistoryLocation } = Router;
 
 const routes = (
   <Route handler={App}>
     <Route path="/" handler={BookListPage} />,
+    <Route name="add" path="/book/add" handler={AddPage} />
     <Route name="book-page" path="/:id" handler={BookPage} />
   </Route>
 );
